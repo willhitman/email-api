@@ -3,3 +3,4 @@ test.py
 *.json
 *.pyc
 *.db
+email-api.pyc

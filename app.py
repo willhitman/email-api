@@ -149,7 +149,7 @@ class eMailService(Resource):
         message = EmailModel(email=args['email'],subject=args['subject'],body=args['body'])
         db.session.add(message)
         db.session.commit()
-        send_message(service, "hello@enlightenedminds.africa", args['email'], 
+        send_message(service, "ralph@enlightenedminds.africa", args['email'], 
             args['email'] +"\n" + args['subject'] + "\n" + args['body'], ["credentials.json"])
         return {"message": "send"}, 201
 

@@ -108,6 +108,7 @@ app = Flask(__name__)
 api=Api(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
+CORS(app)
 
 #creating a database table
 class EmailModel(db.Model):
